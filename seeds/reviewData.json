@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "managerName": "Darth Manager",
+      "reviewer": "Stormtrooper #1",
+      "rating": 2,
+      "comment": "Darth Manager never explains his plans clearly. I'm always left in the dark."
+    },
+    {
+      "id": 2,
+      "managerName": "Cruella de Boss",
+      "reviewer": "Henchman #101",
+      "rating": 4,
+      "comment": "Cruella is fashion-forward and always keeps the office looking stylish. A bit obsessed with Dalmatian patterns, though."
+    },
+    {
+      "id": 3,
+      "managerName": "Joker Supervisor",
+      "reviewer": "Harley Quinn",
+      "rating": 5,
+      "comment": "Working with Joker is a blast! He brings chaos to the workplace, but in a fun way. Never a dull moment."
+    },
+    {
+      "id": 4,
+      "managerName": "Maleficent Manager",
+      "reviewer": "Dragon Handler",
+      "rating": 3,
+      "comment": "Maleficent Manager has a knack for dramatic entrances, but her leadership style is a bit too 'sleeping beauty' for my taste."
+    },
+    {
+      "id": 5,
+      "managerName": "Lex Luthorious",
+      "reviewer": "Tech Minion",
+      "rating": 1,
+      "comment": "Lex Luthorious is all about world domination, but he can't even manage a team meeting properly. Total chaos!"
+    },
+    {
+      "id": 6,
+      "managerName": "Hannibal Boss",
+      "reviewer": "Cannibal Co-worker",
+      "rating": 5,
+      "comment": "Hannibal Boss always organizes the best potlucks. His taste in food is simply to die for."
+    },
+    {
+      "id": 7,
+      "managerName": "Cthulhu Chief",
+      "reviewer": "Eldritch Intern",
+      "rating": 4,
+      "comment": "Cthulhu Chief might be ancient and unknowable, but surprisingly great at team-building exercises. Just avoid eye contact."
+    },
+    {
+      "id": 8,
+      "managerName": "Captain Hook Manager",
+      "reviewer": "Pirate Programmer",
+      "rating": 2,
+      "comment": "Captain Hook Manager is obsessed with his hand. It's distracting during code reviews, and he's always looking for it!"
+    }
+]
+  
