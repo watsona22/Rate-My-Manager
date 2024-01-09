@@ -1,10 +1,11 @@
 const router = require('express').Router();
-const { Rating } = require('../../models');
+const { Rating, Manager } = require('../../models');
 
 router.get('/', async (req, res) => {
+    // get all ratings
     try {
         const ratingData = await Rating.findAll({
-            // include: [{ model: Manager }],
+            include: [{ model: Manager }],
 
         });
         res.json(ratingData);
@@ -14,7 +15,7 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-    // create a new post
+    // create a new rating
     try {
         const postData = await Rating.create(req.body);
         res.json(postData);
@@ -23,14 +24,5 @@ router.post('/', async (req, res) => {
     }
 });
 
-router.get('/login', (req, res) => {
-    // If the user is already logged in, redirect to the homepage
-    if (req.session.loggedIn) {
-        res.redirect('/');
-        return;
-    }
-    // Otherwise, render the 'login' template
-    res.render('login');
-});
 
 module.exports = router;
