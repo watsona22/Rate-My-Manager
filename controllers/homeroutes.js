@@ -1,19 +1,17 @@
 const router = require('express').Router();
-const { Rating } = require('../../models');
+const { Rating } = require('../models');
 
-router.get('/', async (req, res) => {
+router.get('/api/ratings', async (req, res) => {
     try {
-        const ratingData = await Rating.findAll({
-            // include: [{ model: Manager }],
-
-        });
-        res.json(ratingData);
+        const ratingData = await Rating.findAll();
+        const ratings = ratingData.map((rating) => rating.get({ plain: true }));
+        res.json(ratings)
     } catch (err) {
         res.status(500).json(err);
     }
 });
 
-router.post('/', async (req, res) => {
+router.post('/api/ratings', async (req, res) => {
     // create a new post
     try {
         const postData = await Rating.create(req.body);
