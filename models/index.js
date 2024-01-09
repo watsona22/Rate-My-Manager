@@ -10,4 +10,4 @@ Rating.belongsTo(Manager, {
     foreignKey: 'manager_id'
 });
 
-module.exports = { Rating };
+module.exports = { Rating, Manager};
