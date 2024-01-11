@@ -9,7 +9,7 @@ const addReview = async() => {
 if ( rating && name && reviewer && description) {
       const response = await fetch('/api/ratings',{
         method: 'POST',
-        body: JSON.stringify({ rating, name, reviewer, description }),
+        body: JSON.stringify({ rating: parseInt(rating), name, reviewer, description }),
         headers: { 'Content-Type': 'application/json'},
 
       }); 
