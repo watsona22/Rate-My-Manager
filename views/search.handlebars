@@ -1,0 +1,70 @@
+<!--Search-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Review</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+        <!-- Recent Reviews -->
+        <div class="mt-10">
+            <h2 class="text-4xl font-bold mb-4">Recent Reviews</h2>
+            <form id="ratingForm">
+                <!-- Star Rating -->
+                <div class="mb-4 form-group">
+                    <label for="rating" class="text-xl text-gray-800">Rating:</label>
+                    <div class="flex items-center mt-2">
+                        <input type="hidden" id="rating" value="0">
+                        <span class="cursor-pointer text-2xl" onclick="setRating(1)">&#9733;</span>
+                        <span class="cursor-pointer text-2xl" onclick="setRating(2)">&#9733;</span>
+                        <span class="cursor-pointer text-2xl" onclick="setRating(3)">&#9733;</span>
+                        <span class="cursor-pointer text-2xl" onclick="setRating(4)">&#9733;</span>
+                        <span class="cursor-pointer text-2xl" onclick="setRating(5)">&#9733;</span>
+                    </div>
+                </div>
+
+                <!-- Manager's Name -->
+                <div class="mb-4 form-group">
+                    <label for="managerName" class="text-xl text-gray-800">Manager's Name:</label>
+                    <input type="text" id="managerName" class="w-full p-2 border rounded-md form-input">
+                </div>
+
+                <!-- User's Name -->
+                <div class="mb-4 form group">
+                    <label for="userName" class="text-xl text-gray-800">Your Name:</label>
+                    <input type="text" id="userName"  class="w-full p-2 border rounded-md form-input">
+                </div>
+
+                <!-- Comments -->
+                <label for="comments" class="text-xl text-gray-800">Comments:</label>
+                <textarea id="comments" rows="4" class="w-full p-2 border rounded-md mb-4 form-input"></textarea>
+
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle star rating -->
+    <script>
+        function setRating(rating) {
+            document.getElementById('rating').value = rating;
+            // Highlight the selected stars
+            for (let i = 1; i <= 5; i++) {
+                const star = document.querySelector(`#ratingForm span:nth-child(${i+1})`);;
+                if (star !== null) {
+                    if (i <= rating) {
+                        star.classList.add('text-yellow-500');
+                    } else {
+                        star.classList.remove('text-yellow-500');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="/js/addReview.js"></script>
+</body>
+</html>

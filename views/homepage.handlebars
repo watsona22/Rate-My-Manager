@@ -1,0 +1,28 @@
+<h1 class="text-6xl font-bold mb-6">Welcome to Rate My Manager</h1>
+        
+    <p class="text-3xl mb-4 text-gray-800">
+        Manager Rating allows you to provide feedback on your manager, contributing to a positive work environment for yourself and future employees!
+    </p>
+
+    <img src="/public/css/images/Workplace.webp" alt="Manager Image" class="mt-10 max-w-full mx-auto rounded-md shadow-md" style="max-width: 800px;">
+    <div class="mt-10">
+        <h2 class="text-4xl font-bold mb-4">Recent Reviews</h2>
+        <!-- Add a container for recent reviews -->
+        <div id="ratings-container">
+            <script id="rating-template" type="text/x-handlebars-template">
+                {{#if ratings.length}}
+                    {{#each ratings as |rating|}}
+                        <div class="mb-4">
+                            <p class="text-xl font-bold">{{ rating.name }}</p>
+                            <p class="text-gray-700">{{ rating.description }}</p>
+                            <p class="text-blue-500">Rating: {{ rating.rating }}/5</p>
+                        </div>
+                    {{/each}}
+                {{else}}
+                    <p class="text-xl text-gray-700">No ratings available yet.</p>
+                {{/if}}
+            </script>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
