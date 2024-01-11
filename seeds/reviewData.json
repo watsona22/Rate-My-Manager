@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Darth Manager",
+    "reviewer": "Stormtrooper #1",
+    "rating": 2,
+    "description": "Darth Manager never explains his plans clearly. I'm always left in the dark."
+  },
+  {
+    "name": "Cruella de Boss",
+    "reviewer": "Henchman #101",
+    "rating": 4,
+    "description": "Cruella is fashion-forward and always keeps the office looking stylish. A bit obsessed with Dalmatian patterns, though."
+  },
+  {
+    "name": "Joker Supervisor",
+    "reviewer": "Harley Quinn",
+    "rating": 5,
+    "description": "Working with Joker is a blast! He brings chaos to the workplace, but in a fun way. Never a dull moment."
+  },
+  {
+    "name": "Maleficent Manager",
+    "reviewer": "Dragon Handler",
+    "rating": 3,
+    "description": "Maleficent Manager has a knack for dramatic entrances, but her leadership style is a bit too 'sleeping beauty' for my taste."
+  },
+  {
+    "name": "Lex Luthorious",
+    "reviewer": "Tech Minion",
+    "rating": 1,
+    "description": "Lex Luthorious is all about world domination, but he can't even manage a team meeting properly. Total chaos!"
+  },
+  {
+    "name": "HanniBoss",
+    "reviewer": "Cannibal Co-worker",
+    "rating": 5,
+    "description": "Hannibal Boss always organizes the best potlucks. His taste in food is simply to die for."
+  },
+  {
+    "name": "Cthulhu Chief",
+    "reviewer": "Eldritch Intern",
+    "rating": 4,
+    "description": "Cthulhu Chief might be ancient and unknowable, but surprisingly great at team-building exercises. Just avoid eye contact."
+  },
+  {
+    "name": "Captain Hook Manager",
+    "reviewer": "Pirate Programmer",
+    "rating": 2,
+    "description": "Captain Hook Manager is obsessed with his hand. It's distracting during code reviews, and he's always looking for it!"
+  }
+]

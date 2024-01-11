@@ -1,6 +1,7 @@
 const router = require('express').Router();
 
 router.get('/login', (req, res) => {
+    console.log("Loading login page!")
     // If the user is already logged in, redirect to the homepage
     if (req.session.loggedIn) {
         res.redirect('/');

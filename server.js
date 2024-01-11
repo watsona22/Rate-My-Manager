@@ -29,7 +29,7 @@ const sess = {
     })
   };
   
-  app.use(session(sess));
+app.use(session(sess));
 
 //Chooses the handlebars template used by Express.js
 const hbs = handlebars.create();
@@ -53,7 +53,6 @@ app.get('/health', (req, res) => {
 })
 app.use(routes);
 
-app.listen(PORT, () => {
-  console.log(`App listening to port ${PORT}`);
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
 });
-
