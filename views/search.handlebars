@@ -54,10 +54,12 @@
             // Highlight the selected stars
             for (let i = 1; i <= 5; i++) {
                 const star = document.querySelector(`#ratingForm span:nth-child(${i})`);
-                if (i <= rating) {
-                    star.classList.add('text-yellow-500');
-                } else {
-                    star.classList.remove('text-yellow-500');
+                if (star !== null) {
+                    if (i <= rating) {
+                        star.classList.add('text-yellow-500');
+                    } else {
+                        star.classList.remove('text-yellow-500');
+                    }
                 }
             }
         }
