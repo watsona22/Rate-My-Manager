@@ -46,6 +46,7 @@ app.get('/', async (req, res) => {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/public', express.static(path.join(__dirname, 'public'))); //added this so that the image renders on the page
 app.use(express.static(path.join(__dirname, 'public')));
 app.get('/health', (req, res) => {
   res.send('healthy')
