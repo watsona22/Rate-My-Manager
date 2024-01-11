@@ -15,20 +15,20 @@ const PORT = process.env.PORT || 3001;
 
 //we need to change secret value, Change secure to true once we get things live, leave it false while during development
 const sess = {
-    secret: 'Super secret secret',
-    cookie: {
-      maxAge: 300000,
-      httpOnly: true,
-      secure: false,
-      sameSite: 'strict',
-    },
-    resave: false,
-    saveUninitialized: true,
-    store: new SequelizeStore({
-      db: sequelize
-    })
-  };
-  
+  secret: process.env.SESSION_SECRET,
+  cookie: {
+    maxAge: 300000,
+    httpOnly: true,
+    secure: false,
+    sameSite: 'strict',
+  },
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
+};
+
 app.use(session(sess));
 
 //Chooses the handlebars template used by Express.js
@@ -41,7 +41,7 @@ app.set('view engine', 'handlebars');
 app.get('/', async (req, res) => {
   const ratingData = await Rating.findAll();
   const ratings = ratingData.map((rating) => rating.get({ plain: true }));
-  res.render('homepage', {layout: 'main', ratings});
+  res.render('homepage', { layout: 'main', ratings });
 });
 
 app.use(express.json());
