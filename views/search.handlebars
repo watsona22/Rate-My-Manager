@@ -6,26 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location Review</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places" defer></script>
+    {{!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places" defer></script> --}}
 </head>
 <body class="bg-gray-100">
 
-    <!-- Navigation Bar -->
-    <nav class="bg-blue-500 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="/" class="text-white text-2xl font-bold">Rate My Manager</a>
-
-            <!-- Navigation Links -->
-            <div class="space-x-4">
-                <a href="/signup" class="text-white hover:text-gray-200">Sign Up</a>
-                <a href="/login" class="text-white hover:text-gray-200">Login</a>
-                <a href="/recent-reviews" class="text-white hover:text-gray-200">Reviews</a>
-            </div>
-        </div>
-    </nav>
 
     <!-- Main Content -->
-    <div class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
+    {{!-- <div class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
         <h1 class="text-6xl font-bold mb-6">Location Review</h1>
         
         <!-- Location Search -->
@@ -35,7 +22,7 @@
         </div>
 
         <!-- Map Container -->
-        <div id="map" class="mt-8 h-64"></div>
+        <div id="map" class="mt-8 h-64"></div> --}}
 
         <!-- Recent Reviews -->
         <div class="mt-10">
@@ -92,7 +79,7 @@
     </script>
 
     <!-- JavaScript to initialize the map on page load -->
-    <script>
+    {{!-- <script>
         let map;
         let marker;
 
@@ -128,7 +115,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             initMap();
         });
-    </script>
+    </script> --}}
 
 </body>
 </html>
