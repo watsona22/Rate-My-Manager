@@ -1,8 +1,8 @@
 const sequelize = require('../config/connection');
 const { User, Rating, Manager } = require('../models');
 
-const userData = require('./userData.js');
-const reviewData = require('./reviewData.js');
+const userData = require('./userData.json');
+const reviewData = require('./reviewData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -21,5 +21,5 @@ const seedDatabase = async () => {
 
   process.exit(0);
 };
-
+console.log(userData);
 seedDatabase();
