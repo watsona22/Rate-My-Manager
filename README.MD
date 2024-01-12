@@ -50,10 +50,8 @@ Rate My Manager can be used to find and rate managers - both good and bad - to c
 <li>Contribute to a community of transparency so you know what to expect from your supervisor.</li>
 </ul>
 
-The following screenshots show some site functionality:
-    ![Image URL-Mockup]()
-    
-## Deployed URL: 
+The following links to our deployed application:
+    https://rate-my-manager-97f9044f8b00.herokuapp.com/
 
 ## Contributors
 
