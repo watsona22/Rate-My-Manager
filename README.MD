@@ -68,8 +68,7 @@ The following resources were referenced in the development of this site:
 
 <ul>
 <li>CSS Framework - Tailwind - https://tailwindcss.com/</li>
-<li>NPM Package - Axios - https://www.npmjs.com/package/axios</li>
-<li>API -  - </li>
+<li>NPM Package - Nodemon - https://www.npmjs.com/package/nodemon</li>
 </ul>
 
 ## License
