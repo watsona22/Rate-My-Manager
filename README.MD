@@ -30,6 +30,7 @@ Rate My Manager provides options to browse and compose ratings for managers by b
 
 Our acceptance criteria were as follows: 
 
+## Acceptance Criteria
 ```md
 GIVEN that a user wants to find manager ratings,
 THEN he selects a business by location chooses a manager and those reviews are displayed.
