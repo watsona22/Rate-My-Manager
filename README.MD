@@ -54,7 +54,7 @@ Rate My Manager can be used to find and rate managers - both good and bad - to c
 
 The following links to our deployed application:
     https://rate-my-manager-97f9044f8b00.herokuapp.com/
-![Deployed Website](public/css/images/Workplace.webp)
+![Deployed Website](public/css/images/website.png)
 
 ## Contributors
 
